@@ -90,7 +90,7 @@ export default function Testimonials() {
                 role="tab"
                 aria-selected={i === index}
                 aria-label={`Show testimonial from ${t.name}`}
-                className={`h-1.5 rounded-full transition-all ${i === index ? "w-8 bg-ink" : "w-2.5 bg-canvas-3"}`}
+                className={`h-1.5 rounded-full transition-all ${i === index ? "w-8 bg-primary" : "w-2.5 bg-canvas-3"}`}
                 onClick={() => setIndex(i)}
               />
             ))}

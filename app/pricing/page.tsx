@@ -34,21 +34,31 @@ export default function PricingPage() {
         body="Simple retainers, scoped to output. We’ll map the right mix on a free call — no surprise rate cards mid-project."
       />
       <div className="site-shell grid gap-4 pb-24 lg:grid-cols-3">
-        {plans.map((plan) => (
-          <article key={plan.name} className="flex flex-col rounded-[24px] border border-line bg-white p-8">
-            <h2 className="text-2xl font-medium tracking-[-0.03em]">{plan.name}</h2>
-            <p className="mt-2 text-lg text-muted">{plan.price}</p>
-            <p className="mt-4 text-ink-soft">{plan.body}</p>
-            <ul className="mt-6 grid gap-2 text-sm text-ink-soft">
-              {plan.points.map((p) => (
-                <li key={p}>— {p}</li>
-              ))}
-            </ul>
-            <div className="mt-8">
-              <Button openCall>Book a Free Call</Button>
-            </div>
-          </article>
-        ))}
+        {plans.map((plan) => {
+          const featured = plan.name === "Studio";
+          return (
+            <article
+              key={plan.name}
+              className={`flex flex-col rounded-[24px] border p-8 ${
+                featured ? "border-accent bg-primary text-canvas" : "border-line bg-white"
+              }`}
+            >
+              <h2 className="text-2xl font-medium tracking-[-0.03em]">{plan.name}</h2>
+              <p className={`mt-2 text-lg ${featured ? "text-accent" : "text-muted"}`}>{plan.price}</p>
+              <p className={`mt-4 ${featured ? "text-canvas/70" : "text-ink-soft"}`}>{plan.body}</p>
+              <ul className={`mt-6 grid gap-2 text-sm ${featured ? "text-canvas/70" : "text-ink-soft"}`}>
+                {plan.points.map((p) => (
+                  <li key={p}>— {p}</li>
+                ))}
+              </ul>
+              <div className="mt-8">
+                <Button openCall variant={featured ? "light" : "primary"}>
+                  Book a Free Call
+                </Button>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </>
   );

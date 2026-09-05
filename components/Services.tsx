@@ -62,7 +62,7 @@ export default function Services() {
                 sizes="45vw"
                 className="transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 text-white">
                 <p className="eyebrow text-white/70">{current.group}</p>
                 <p className="mt-2 text-2xl font-medium tracking-[-0.03em]">{current.name}</p>

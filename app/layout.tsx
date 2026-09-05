@@ -57,7 +57,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <CallModalProvider>
           <a
             href="#main"
-            className="absolute left-4 top-4 z-[90] -translate-y-24 rounded-full bg-ink px-4 py-2 text-sm text-white transition focus:translate-y-0"
+            className="absolute left-4 top-4 z-[90] -translate-y-24 rounded-full bg-primary px-4 py-2 text-sm text-canvas transition focus:translate-y-0"
           >
             Skip to content
           </a>

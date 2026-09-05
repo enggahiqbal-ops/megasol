@@ -56,7 +56,7 @@ function CallModal({ isOpen, close }: { isOpen: boolean; close: () => void }) {
           <motion.button
             type="button"
             aria-label="Close dialog overlay"
-            className="absolute inset-0 bg-ink/45"
+            className="absolute inset-0 bg-primary/50"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -111,7 +111,7 @@ function CallModal({ isOpen, close }: { isOpen: boolean; close: () => void }) {
                       type="email"
                       name="email"
                       autoComplete="email"
-                      className="h-12 rounded-xl border border-ink/12 bg-canvas px-4 text-[15px] outline-none transition focus:border-ink"
+                      className="h-12 rounded-xl border border-ink/12 bg-canvas px-4 text-[15px] outline-none transition focus:border-primary"
                     />
                   </label>
                   <label className="grid gap-1.5 text-sm">
@@ -121,7 +121,7 @@ function CallModal({ isOpen, close }: { isOpen: boolean; close: () => void }) {
                       type="text"
                       name="name"
                       autoComplete="name"
-                      className="h-12 rounded-xl border border-ink/12 bg-canvas px-4 text-[15px] outline-none transition focus:border-ink"
+                      className="h-12 rounded-xl border border-ink/12 bg-canvas px-4 text-[15px] outline-none transition focus:border-primary"
                     />
                   </label>
                   <label className="grid gap-1.5 text-sm">
@@ -130,14 +130,14 @@ function CallModal({ isOpen, close }: { isOpen: boolean; close: () => void }) {
                       type="text"
                       name="company"
                       autoComplete="organization"
-                      className="h-12 rounded-xl border border-ink/12 bg-canvas px-4 text-[15px] outline-none transition focus:border-ink"
+                      className="h-12 rounded-xl border border-ink/12 bg-canvas px-4 text-[15px] outline-none transition focus:border-primary"
                     />
                   </label>
                   <label className="grid gap-1.5 text-sm">
                     <span className="text-muted">What do you need?</span>
                     <select
                       name="need"
-                      className="h-12 rounded-xl border border-ink/12 bg-canvas px-4 text-[15px] outline-none transition focus:border-ink"
+                      className="h-12 rounded-xl border border-ink/12 bg-canvas px-4 text-[15px] outline-none transition focus:border-primary"
                       defaultValue="YouTube editing"
                     >
                       <option>YouTube editing</option>
@@ -148,7 +148,7 @@ function CallModal({ isOpen, close }: { isOpen: boolean; close: () => void }) {
                   </label>
                   <button
                     type="submit"
-                    className="focus-ring mt-2 inline-flex h-12 items-center justify-center rounded-full bg-ink text-[15px] font-medium text-white transition hover:bg-black"
+                    className="focus-ring mt-2 inline-flex h-12 items-center justify-center rounded-full bg-primary text-[15px] font-medium text-canvas transition hover:bg-primary-hover"
                   >
                     Book a Free Call
                   </button>

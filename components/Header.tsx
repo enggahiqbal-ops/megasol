@@ -55,7 +55,7 @@ export default function Header() {
         }`}
       >
         <div className="site-shell flex h-[72px] items-center justify-between gap-4">
-          <Link href="/" className="focus-ring shrink-0 text-[15px] font-semibold tracking-[-0.04em]">
+          <Link href="/" className="focus-ring shrink-0 text-[15px] font-semibold tracking-[-0.04em] text-primary">
             VAYRO STUDIOS
           </Link>
 
@@ -84,7 +84,7 @@ export default function Header() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={reduce ? { opacity: 0 } : { opacity: 0, y: 6 }}
                     transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
-                    className="absolute left-1/2 top-[calc(100%+12px)] z-50 w-[min(860px,70vw)] -translate-x-1/2 rounded-3xl border border-line bg-white p-6 shadow-[0_24px_80px_rgba(17,17,17,0.12)]"
+                    className="absolute left-1/2 top-[calc(100%+12px)] z-50 w-[min(860px,70vw)] -translate-x-1/2 rounded-3xl border border-line bg-white p-6 shadow-[0_24px_80px_rgba(7,26,20,0.14)]"
                   >
                     <div className="grid grid-cols-4 gap-6">
                       {serviceGroups.map((group) => (

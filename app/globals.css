@@ -1,17 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --canvas: #f3f0ea;
-  --canvas-2: #e8e3d8;
-  --canvas-3: #ddd6c8;
-  --ink: #111111;
-  --ink-soft: #3d3a34;
-  --muted: #6a655c;
-  --line: rgba(17, 17, 17, 0.1);
-  --line-strong: rgba(17, 17, 17, 0.18);
-  --accent: #c8f04d;
-  --accent-ink: #162000;
-  --white: #fffcf7;
+  --canvas: #f2efe9;
+  --canvas-2: #eae5de;
+  --canvas-3: #e0d9ce;
+  --ink: #28281c;
+  --ink-soft: #4f4e3c;
+  --muted: #7a7668;
+  --line: rgba(7, 26, 20, 0.12);
+  --line-strong: rgba(7, 26, 20, 0.2);
+  --primary: #071a14;
+  --primary-hover: #0c2a21;
+  --accent: #b8945a;
+  --gold: #a67f45;
+  --accent-ink: #071a14;
+  --white: #faf8f4;
   --header-h: 72px;
   --page: 1440px;
   --gutter: clamp(1.25rem, 3.2vw, 3.5rem);
@@ -26,7 +29,10 @@
   --color-ink-soft: var(--ink-soft);
   --color-muted: var(--muted);
   --color-line: var(--line);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
   --color-accent: var(--accent);
+  --color-gold: var(--gold);
   --color-accent-ink: var(--accent-ink);
   --color-white: var(--white);
   --font-sans: var(--font-inter-tight);
@@ -86,6 +92,12 @@ img {
   font-style: italic;
   font-weight: 400;
   letter-spacing: -0.03em;
+  color: var(--gold);
+}
+
+.bg-primary .italic-accent,
+.on-dark .italic-accent {
+  color: var(--accent);
 }
 
 .eyebrow {
@@ -94,11 +106,11 @@ img {
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--gold);
 }
 
 .focus-ring:focus-visible {
-  outline: 2px solid var(--ink);
+  outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
 
@@ -136,7 +148,7 @@ img {
 .media-frame {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(145deg, #1a1916 0%, #3a372f 48%, #18170f 100%);
+  background: linear-gradient(145deg, #071a14 0%, #0d2e22 48%, #0a241c 100%);
 }
 
 .media-frame img {

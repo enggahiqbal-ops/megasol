@@ -41,7 +41,7 @@ export default function Portfolio() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="transition-transform duration-700 group-hover:scale-[1.05]"
                   />
-                  <div className="absolute inset-0 bg-ink/0 transition-colors duration-500 group-hover:bg-ink/35" />
+                  <div className="absolute inset-0 bg-primary/0 transition-colors duration-500 group-hover:bg-primary/55" />
                   <div className="absolute inset-x-0 bottom-0 translate-y-2 p-5 text-white opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                     <p className="text-xs uppercase tracking-[0.14em] text-white/70">{item.category}</p>
                     <div className="mt-1 flex items-center justify-between gap-2">

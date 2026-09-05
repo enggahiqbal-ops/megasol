@@ -6,13 +6,13 @@ export default function CreativeAdvantage() {
   return (
     <section className="pb-8 sm:pb-12">
       <div className="site-shell">
-        <div className="overflow-hidden rounded-[28px] bg-ink text-white lg:grid lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="overflow-hidden rounded-[28px] bg-primary text-canvas lg:grid lg:grid-cols-[1.05fr_0.95fr]">
           <Reveal className="flex flex-col justify-center px-7 py-12 sm:px-12 lg:px-16 lg:py-20">
-            <p className="eyebrow text-white/55">Your creative advantage</p>
+            <p className="eyebrow text-accent">Your creative advantage</p>
             <h2 className="mt-5 max-w-[13ch] text-[clamp(2.1rem,4.2vw,4.1rem)] font-medium leading-[0.98] tracking-[-0.045em]">
               The creative partner your team has been looking for.
             </h2>
-            <p className="mt-6 max-w-[32rem] text-[1.05rem] leading-7 text-white/70">
+            <p className="mt-6 max-w-[32rem] text-[1.05rem] leading-7 text-canvas/70">
               VAYRO STUDIOS sits beside your in-house team — editors, motion artists and
               strategists who can absorb volume without turning your brand into a template.
             </p>

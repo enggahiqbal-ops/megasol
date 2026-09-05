@@ -27,7 +27,7 @@ export default function CustomerStories() {
                       sizes="(max-width: 1024px) 100vw, 33vw"
                       className="transition-transform duration-700 group-hover:scale-[1.05]"
                     />
-                    <span className="absolute bottom-4 left-4 inline-flex size-11 items-center justify-center rounded-full bg-white text-ink">
+                    <span className="absolute bottom-4 left-4 inline-flex size-11 items-center justify-center rounded-full bg-canvas text-primary">
                       <Play className="ml-0.5 size-4 fill-current" aria-hidden />
                     </span>
                   </div>

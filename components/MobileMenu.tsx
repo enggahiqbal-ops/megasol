@@ -42,7 +42,7 @@ export default function MobileMenu({ open, onClose }: Props) {
           transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
         >
           <div className="site-shell flex h-[72px] items-center justify-between">
-            <Link href="/" className="text-[15px] font-semibold tracking-[-0.04em]" onClick={onClose}>
+            <Link href="/" className="text-[15px] font-semibold tracking-[-0.04em] text-primary" onClick={onClose}>
               VAYRO STUDIOS
             </Link>
             <button

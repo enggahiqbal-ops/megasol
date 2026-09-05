@@ -14,7 +14,7 @@ export default function Differentiators() {
         <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {differentiators.map((item, i) => (
             <Reveal key={item.kicker} delay={i * 0.07} className="border-t border-line pt-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-muted">{item.kicker}</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-gold">{item.kicker}</p>
               <h3 className="mt-5 text-[1.45rem] font-medium leading-[1.15] tracking-[-0.03em]">{item.title}</h3>
               <p className="mt-4 text-[15px] leading-7 text-ink-soft">{item.body}</p>
             </Reveal>

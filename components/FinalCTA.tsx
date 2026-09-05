@@ -13,9 +13,9 @@ export default function FinalCTA() {
               fill
               sizes="100vw"
             />
-            <div className="absolute inset-0 bg-ink/65" />
+            <div className="absolute inset-0 bg-primary/70" />
           </div>
-          <div className="relative flex min-h-[420px] flex-col items-start justify-end px-7 py-12 sm:min-h-[520px] sm:px-12 lg:px-16 lg:py-16">
+          <div className="relative on-dark flex min-h-[420px] flex-col items-start justify-end px-7 py-12 sm:min-h-[520px] sm:px-12 lg:px-16 lg:py-16">
             <h2 className="max-w-[14ch] text-[clamp(2.3rem,5.4vw,5rem)] font-medium leading-[0.95] tracking-[-0.05em] text-white">
               Ready to make more <span className="italic-accent">great content?</span>
             </h2>
@@ -26,7 +26,7 @@ export default function FinalCTA() {
               <Button openCall variant="light">
                 Book a Free Call
               </Button>
-              <Button href="/work" variant="secondary" className="border-white/20 text-white hover:bg-white/10 hover:border-white/40">
+              <Button href="/work" variant="secondary" className="border-canvas/20 text-canvas hover:bg-canvas/10 hover:border-accent">
                 See Our Work
               </Button>
             </div>

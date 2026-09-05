@@ -20,12 +20,12 @@ type Props = {
 
 const styles: Record<Variant, string> = {
   primary:
-    "bg-ink text-white hover:bg-black hover:translate-y-[-1px]",
+    "bg-primary text-canvas hover:bg-primary-hover hover:translate-y-[-1px]",
   secondary:
-    "bg-transparent text-ink border border-ink/15 hover:border-ink/40 hover:bg-ink/[0.03]",
-  ghost: "bg-transparent text-ink hover:bg-ink/[0.04]",
+    "bg-transparent text-ink border border-primary/15 hover:border-primary/40 hover:bg-primary/[0.03]",
+  ghost: "bg-transparent text-ink hover:bg-primary/[0.04]",
   light:
-    "bg-white text-ink hover:bg-accent",
+    "bg-canvas text-primary hover:bg-accent hover:text-accent-ink",
 };
 
 export default function Button({

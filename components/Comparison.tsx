@@ -25,7 +25,7 @@ export default function Comparison() {
               role="tab"
               aria-selected={active === i}
               className={`focus-ring shrink-0 rounded-full px-4 py-2 text-sm font-medium transition ${
-                active === i ? "bg-ink text-white" : "bg-white text-ink-soft hover:text-ink"
+                active === i ? "bg-primary text-canvas" : "bg-white text-ink-soft hover:text-ink"
               }`}
               onClick={() => setActive(i)}
             >
@@ -39,14 +39,14 @@ export default function Comparison() {
             <article
               key={option.name}
               className={`rounded-[24px] p-6 transition-colors ${
-                option.highlight ? "bg-ink text-white" : "bg-white"
+                option.highlight ? "bg-primary text-canvas" : "bg-white"
               }`}
             >
               <h3 className="text-lg font-medium tracking-[-0.03em]">{option.name}</h3>
-              <p className={`mt-3 min-h-[4.5rem] text-sm leading-6 ${option.highlight ? "text-white/70" : "text-ink-soft"}`}>
+              <p className={`mt-3 min-h-[4.5rem] text-sm leading-6 ${option.highlight ? "text-canvas/70" : "text-ink-soft"}`}>
                 {option.summary}
               </p>
-              <p className={`mt-6 text-xs uppercase tracking-[0.14em] ${option.highlight ? "text-white/50" : "text-muted"}`}>
+              <p className={`mt-6 text-xs uppercase tracking-[0.14em] ${option.highlight ? "text-accent" : "text-muted"}`}>
                 {comparisonCategories[active]}
               </p>
               <div className="mt-3 flex gap-1.5" aria-hidden>
@@ -57,9 +57,9 @@ export default function Comparison() {
                       i < option.scores[active]
                         ? option.highlight
                           ? "bg-accent"
-                          : "bg-ink"
+                          : "bg-primary"
                         : option.highlight
-                          ? "bg-white/15"
+                          ? "bg-canvas/15"
                           : "bg-canvas-2"
                     }`}
                   />

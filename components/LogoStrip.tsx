@@ -3,7 +3,7 @@ import Marquee from "@/components/Marquee";
 
 export default function LogoStrip() {
   return (
-    <section className="border-y border-line py-10 sm:py-12" aria-label="Trusted brands">
+    <section className="border-y border-line bg-canvas-2 py-10 sm:py-12" aria-label="Trusted brands">
       <div className="site-shell">
         <p className="mb-8 text-center text-[15px] text-muted">
           Trusted by ambitious brands and creators

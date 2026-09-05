@@ -38,14 +38,14 @@ export default function Hero() {
             sizes="(max-width: 1440px) 100vw, 1440px"
             className="scale-[1.04]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/55 via-primary/10 to-transparent" />
           <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4 sm:bottom-8 sm:left-8 sm:right-8">
             <p className="max-w-[18rem] text-sm text-white/85 sm:text-base">
               Production montage · YouTube, launch films, short-form and motion
             </p>
             <button
               type="button"
-              className="focus-ring inline-flex size-14 items-center justify-center rounded-full bg-white text-ink shadow-lg sm:size-16"
+              className="focus-ring inline-flex size-14 items-center justify-center rounded-full bg-canvas text-primary shadow-lg sm:size-16"
               aria-label="Play production montage"
             >
               <Play className="ml-0.5 size-5 fill-current" aria-hidden />
